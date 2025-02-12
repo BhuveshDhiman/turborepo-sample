@@ -57,6 +57,9 @@ importers:
 
   apps/web:
     dependencies:
+      '@repo/math':
+        specifier: workspace:*
+        version: link:../../packages/math
       '@repo/ui':
         specifier: workspace:*
         version: link:../../packages/ui
@@ -128,10 +131,22 @@ importers:
         specifier: ^8.23.0
         version: 8.23.0(eslint@9.20.0)(typescript@5.7.3)
 
+  packages/math:
+    devDependencies:
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript-config
+      typescript:
+        specifier: latest
+        version: 5.7.3
+
   packages/typescript-config: {}
 
   packages/ui:
     dependencies:
+      '@repo/math':
+        specifier: workspace:*
+        version: link:../math
       react:
         specifier: ^19.0.0
         version: 19.0.0
