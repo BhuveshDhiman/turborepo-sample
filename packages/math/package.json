@@ -1,6 +1,8 @@
 {
   "name": "@repo/math",
+  "version": "0.0.0",
   "type": "module",
+  "private": true,
   "scripts": {
     "dev": "tsc --watch",
     "build": "tsc"

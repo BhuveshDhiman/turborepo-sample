@@ -17,7 +17,7 @@ export const Button = ({ children, className, appName }: ButtonProps) => {
     >
       {children}
       <br />
-      Sum of 5 and 4 = {add(5, 4)}
+      Sum of 5 and 4 = {add(5, 4)}.
     </button>
   );
 };
