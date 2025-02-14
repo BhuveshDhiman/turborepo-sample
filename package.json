@@ -6,7 +6,7 @@
     "dev": "turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "changeset:version": "changeset version"
+    "version": "changeset add && changeset version"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.12",
